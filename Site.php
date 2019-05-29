@@ -1693,4 +1693,50 @@
       background-color: rgba(255, 255, 255, 0);
     }
   }
-</style></body></html>
+</style>
+<?php
+  echo "<script> var x = document.getElementsByClassName('yr-table yr-table-hourly yr-popup-area');
+  var datename = document.getElementsByClassName('daynam')[0].textContent;
+  var day = document.getElementsByClassName('day')[0].outerText;
+  var month = document.getElementsByClassName('month')[0].textContent;
+  var year = document.getElementsByClassName('year')[0].textContent;
+
+  console.log(datename);
+  console.log(day);
+  console.log(month);
+  console.log(year);
+  var b = x[0];
+  var c = b.rows.length;
+
+  var i;
+for (i = 0; i < 2; i++) { 
+    var d = b.rows[i].cells;
+  
+  console.log(d); 
+}
+var j;
+for (j = 2; j < 14; j++) { 
+    
+    var k;
+    var x = '';
+    for (k = 0; k < 9; k++) { 
+        var d = b.rows[j].cells[k].textContent;
+
+         x= x +' '+d;
+      
+      
+    }
+    console.log(x); 
+    
+  
+}
+  //var c = b.rows[3].cells.length;
+  document.write(c);
+  
+  console.log(c);  </script>";
+?>
+<?php
+
+  echo "<script> document.write(datename); </script>"
+?>
+</body></html>

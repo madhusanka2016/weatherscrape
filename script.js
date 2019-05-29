@@ -2,12 +2,12 @@
   
   
   var x = document.getElementsByClassName("yr-table yr-table-hourly yr-popup-area");
-  var datenme = document.getElementsByClassName("dayname")[0].textContent;
+  var datename = document.getElementsByClassName("dayname")[0].textContent;
   var day = document.getElementsByClassName("day")[0].outerText;
   var month = document.getElementsByClassName("month")[0].textContent;
   var year = document.getElementsByClassName("year")[0].textContent;
 
-  console.log(datenme);
+  console.log(datename);
   console.log(day);
   console.log(month);
   console.log(year);
@@ -33,6 +33,7 @@ for (j = 2; j < 14; j++) {
       
     }
     console.log(x); 
+ 
   
 }
   //var c = b.rows[3].cells.length;
